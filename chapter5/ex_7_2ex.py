@@ -24,6 +24,15 @@ menu.setdefault("DoubleShot", "4800원")
 
 menu.setdefault("ColdBrew", "5000원")
 
+menu["cappuccino"] = 5300
+menu.update(dolceLatte = 6500)
+menu.update(newCoffee = 4100)
+menu.update(CaffeAmericano = 4700)
+
+removedItem = menu.pop("OatmealLatte")
+print(removedItem)
+menu.pop("DoubleShot")
+
 # 딕셔너리의 여러 메서드들
 keys = menu.keys()
 print(keys)
