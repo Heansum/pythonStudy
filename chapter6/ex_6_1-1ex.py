@@ -21,7 +21,7 @@ student = [["김철수", 36],
            ["이영수", 59],
            ["최영길", 61]]       # 이름
 
-scoreList = student[][]         # 점수
+#scoreList = student[][]         # 점수
 
 #student[0][1] # -> 가능하다
 
@@ -40,4 +40,30 @@ for score in scoreList:
         print("합격")
     else:
         print("불합격")
+
+'''
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 집합
+7. 불
+
+'''
+
+scoreList = [
+    {"이름": "김철수", "점수": 36},
+    {"이름": "고영희", "점수": 70},
+    {"이름": "홍길동", "점수": 83},
+    {"이름": "이영수", "점수": 59},
+    {"이름": "최영길", "점수": 61}
+]
+
+for score in scoreList:
+    if score["점수"] > 60:
+        print("%s는 합격" % score["이름"])
+    else:
+        print("%s는 불합격" % score["이름"])
+
 
