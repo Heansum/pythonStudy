@@ -54,27 +54,37 @@ def maximum(num1, num2, num3):
     print("최대값은 ", max, " 입니다")
 
 # 네 정수 중 큰 수를 출력하는 함수를 만드세요.
-def maximun2(num1, num2, num3, num4):
-    # max1 - 큰 수1
-    # max2 - 큰 수2
+def maximun4(var1, var2, var3, var4):
+    # max - 큰 수
 
-    max1 = num1
-    max2 = num2
-    if max1 > max2:
-        max3 = max1
-    if max2 > max1:
-        max3 = max2
-    if num3 > max3:
-        max3 = num3
-    if num4 > max3:
-        max3 = num4
+    max = var1
 
-    print(max3)
+    if var2 > max:
+        max = var2
+    if var3 > max:
+        max = vars3
+    if var4 > max:
+        max = var4
+
+    print(max)
+
+num1 = 10
+num2 = 20
+num3 = 30
+num4 = 40
+
+maximun4(num1, num2, num3, num4)
+
+def swap(var1, var2):
+    temp = var1
+    var1 = var2
+    var2 = temp
 
 
-maximun2(1, 2, 3, 4)
-maximun2(4, 3, 2, 1)
+num1 = 10
+num2 = 20
 
+swap(num1, num2)
 
 
 
