@@ -21,5 +21,13 @@
 # 출력스트림을 사용해서 연결 - open("파일의 경로", "w")
 # 프로그램에 있는 데이터를 파일에 저장하겠다.
 
-open("C:/Users/ITPS/Desktop/text.txt", "w")
+# 잘못해서 r을 w로 썻다가 다시 r로 쓰면 파일 내용이 지워진다 ** 중요
+file = open("C:/Users/ITPS/Desktop/text.txt", "r")
+
+# file.write("Hello World~!")
+contents = file.readline()
+print(contents)
+
+
+file.close()
 
